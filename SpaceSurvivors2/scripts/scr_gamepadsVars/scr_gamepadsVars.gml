@@ -1,0 +1,4 @@
+
+gamepads = [];
+gamepadMain = undefined;
+tankIds = [];

@@ -1,0 +1,15 @@
+gp = -1
+image_scale = 1
+
+
+move_hor = 0
+move_ver = 0 
+aim_x = 0 
+aim_y = 0 
+
+shoot = 0
+
+xSpeed = 0 
+ySpeed = 0 
+
+moveSpeed = 4
