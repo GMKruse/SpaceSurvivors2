@@ -1,4 +1,10 @@
+/// @description Insert description here
+// You can write your code in this editor
 
-var shot = instance_create_depth(xShotSpawn, yShotSpawn, 0, obj_shot)
+if(energy<maxEnergy){
+	energy+=20
+	
+	if(energy>maxEnergy){energy=maxEnergy}
+}
 
-alarm_set(0, 130)
+alarm[0]=room_speed*10

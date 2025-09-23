@@ -24,5 +24,21 @@ if(gp != -1){
 }
 
 
-   
+//WASD CONTROLS:
+var accel = 2; // how quickly you speed up
+
+if (keyboard_check(ord("A"))) {
+    hspeed = clamp(hspeed - accel, -moveSpeed, moveSpeed);
+}
+if (keyboard_check(ord("D"))) {
+    hspeed = clamp(hspeed + accel, -moveSpeed, moveSpeed);
+}
+
+if (keyboard_check(ord("W"))) {
+    vspeed = clamp(vspeed - accel, -moveSpeed, moveSpeed);
+}
+if (keyboard_check(ord("S"))) {
+    vspeed = clamp(vspeed + accel, -moveSpeed, moveSpeed);
+}
  
+if(speed>moveSpeed){speed=moveSpeed}
