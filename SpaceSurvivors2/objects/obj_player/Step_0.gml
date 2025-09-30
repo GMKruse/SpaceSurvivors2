@@ -21,6 +21,7 @@ if(gp != -1){
 	_v_input = keyboard_check(ord("S")) - keyboard_check(ord("W"))
 }
 
+// Calculate new horizontal movement speed
 if (_h_input != 0) {
 	xSpeed += _h_input * global.player_acceleration * _delta_time_seconds
 } else {
@@ -32,6 +33,7 @@ if (_h_input != 0) {
 	}
 }
 
+// Calculate new vertical movement speed
 if (_v_input != 0) {
 	ySpeed += _v_input * global.player_acceleration * _delta_time_seconds
 } else {
@@ -43,8 +45,8 @@ if (_v_input != 0) {
 	}
 }
 
+// Make sure there is the same max speed in all directions
 var _current_speed = (xSpeed*xSpeed)+(ySpeed*ySpeed)
-
 if (_current_speed > (global.player_max_speed*global.player_max_speed)) {
 	// Get actual speed
 	_current_speed = sqrt(_current_speed)
@@ -53,6 +55,26 @@ if (_current_speed > (global.player_max_speed*global.player_max_speed)) {
 	
 	xSpeed *= _scale_factor
 	ySpeed *= _scale_factor
+}
+
+// Check horizontal collision
+if (place_meeting(x + xSpeed * _delta_time_seconds, y, par_solid)) {
+	// Move 1 pixel at a time towards the solid
+	while(!place_meeting(x + sign(xSpeed), y, par_solid)) {
+		x += sign(xSpeed)
+	}
+	
+	xSpeed = 0
+}
+
+// Check vertical collision
+if (place_meeting(x, y + ySpeed * _delta_time_seconds, par_solid)) {
+	// Move 1 pixel at a time towards the solid
+	while(!place_meeting(x, y + sign(ySpeed), par_solid)) {
+		y += sign(ySpeed)
+	}
+	
+	ySpeed = 0
 }
 
 x += xSpeed * _delta_time_seconds

@@ -51,6 +51,7 @@
     {"id":{"name":"obj_shootArea","path":"objects/obj_shootArea/obj_shootArea.yy",},},
     {"id":{"name":"obj_shot","path":"objects/obj_shot/obj_shot.yy",},},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
+    {"id":{"name":"par_solid","path":"objects/par_solid/par_solid.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"scr_gamepadsVars","path":"scripts/scr_gamepadsVars/scr_gamepadsVars.yy",},},
     {"id":{"name":"scr_globals_init","path":"scripts/scr_globals_init/scr_globals_init.yy",},},

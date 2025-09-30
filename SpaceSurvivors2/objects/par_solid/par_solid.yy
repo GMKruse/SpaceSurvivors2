@@ -1,19 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_wall",
+  "%Name":"par_solid",
   "eventList":[],
   "managed":true,
-  "name":"obj_wall",
+  "name":"par_solid",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
-  "parentObjectId":{
-    "name":"par_solid",
-    "path":"objects/par_solid/par_solid.yy",
-  },
-  "persistent":true,
+  "parentObjectId":null,
+  "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,
@@ -29,11 +26,8 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
-  "spriteId":{
-    "name":"spr_white",
-    "path":"sprites/spr_white/spr_white.yy",
-  },
+  "solid":false,
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
