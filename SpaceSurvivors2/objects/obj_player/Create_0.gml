@@ -9,10 +9,12 @@ aim_y = 0
 
 shoot = 0
 
-xSpeed = 0 
-ySpeed = 0 
+xSpeed = 0
+ySpeed = 0
 
-moveSpeed = 5
+maxSpeed = 250
+
+acceleration = 1000
 
 //Player slows down when not moving
 friction = .5

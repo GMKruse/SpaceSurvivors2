@@ -39,6 +39,7 @@
   "resources":[
     {"id":{"name":"obj_alien","path":"objects/obj_alien/obj_alien.yy",},},
     {"id":{"name":"obj_alienSpawner","path":"objects/obj_alienSpawner/obj_alienSpawner.yy",},},
+    {"id":{"name":"obj_gameController","path":"objects/obj_gameController/obj_gameController.yy",},},
     {"id":{"name":"obj_gamepadController","path":"objects/obj_gamepadController/obj_gamepadController.yy",},},
     {"id":{"name":"obj_gun","path":"objects/obj_gun/obj_gun.yy",},},
     {"id":{"name":"obj_metallic","path":"objects/obj_metallic/obj_metallic.yy",},},
@@ -52,6 +53,7 @@
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"scr_gamepadsVars","path":"scripts/scr_gamepadsVars/scr_gamepadsVars.yy",},},
+    {"id":{"name":"scr_globals_init","path":"scripts/scr_globals_init/scr_globals_init.yy",},},
     {"id":{"name":"spr_alien","path":"sprites/spr_alien/spr_alien.yy",},},
     {"id":{"name":"spr_gun","path":"sprites/spr_gun/spr_gun.yy",},},
     {"id":{"name":"spr_mainAstronaut","path":"sprites/spr_mainAstronaut/spr_mainAstronaut.yy",},},

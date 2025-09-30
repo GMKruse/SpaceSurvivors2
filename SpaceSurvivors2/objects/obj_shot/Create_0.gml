@@ -1,4 +1,4 @@
 image_xscale = 0.1
 image_yscale = 0.1 
 
-movmentSpeed = 4
+movmentSpeed = 400

@@ -3,7 +3,7 @@ image_yscale = 0.1
 
 depth=-1000
 
-alarm[0]=2
+alarm[0]=global.game_speed_fps*2
 
 shoot_area = instance_create_depth(x-100,y,depth,obj_shootArea)
 
@@ -13,4 +13,4 @@ maxEnergy = 100
 energy = maxEnergy
 
 //recharge 20 energy
-alarm[0]=room_speed*10
+alarm[0]=global.game_speed_fps*20
