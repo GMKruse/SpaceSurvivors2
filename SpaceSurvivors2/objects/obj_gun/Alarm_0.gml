@@ -1,8 +1,7 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description recharge 10
 
 if(energy<maxEnergy){
-	energy+=20
+	energy+=10
 	
 	if(energy>maxEnergy){energy=maxEnergy}
 }

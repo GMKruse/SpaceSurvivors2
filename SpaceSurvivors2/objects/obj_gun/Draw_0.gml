@@ -6,7 +6,7 @@ draw_self();
 // === ENERGY BAR ===
 
 // Bar settings
-var bar_width  = 60;   // full width of the bar
+var bar_width  = maxEnergy;   // full width of the bar
 var bar_height = 10;    // thickness
 var bar_yoff   = -60;  // how far above the gun
 

@@ -1,20 +1,7 @@
-gp = -1
-image_scale = 1
+/// @description Insert description here
+// You can write your code in this editor
+
+// Inherit the parent event
+event_inherited();
 
 image_blend=c_yellow
-
-
-move_hor = 0
-move_ver = 0 
-aim_x = 0 
-aim_y = 0 
-
-shoot = 0
-
-xSpeed = 0 
-ySpeed = 0 
-
-moveSpeed = 5
-
-//Player slows down when not moving
-friction = .5
