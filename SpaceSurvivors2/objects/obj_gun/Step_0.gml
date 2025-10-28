@@ -13,6 +13,6 @@ if (instance_exists(shoot_area)) {
 
 if (player_on_area && cooldown <= 0 && energy>=20) {
     instance_create_depth(x+40,y,depth,obj_shot)
-    cooldown = global.game_speed_fps*2;
+    cooldown = room_speed;
 	energy-=20
 }

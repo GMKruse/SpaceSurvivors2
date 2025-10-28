@@ -12,6 +12,6 @@ if (place_meeting(x, y, obj_playerParent)) {
         }
 
         // Reset cooldown
-        cooldown = round(global.game_speed_fps * .2);
+        cooldown = round(room_speed * .1);
     }
 }
