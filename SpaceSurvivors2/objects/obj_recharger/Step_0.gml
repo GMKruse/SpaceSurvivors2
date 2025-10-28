@@ -13,5 +13,8 @@ if (place_meeting(x, y, obj_playerParent)) {
 
         // Reset cooldown
         cooldown = round(room_speed * .1);
+		
+		var inst_ = instance_create_depth(x,y,-10000,obj_particle)
+		with(inst_){image_blend=#B2FFD7 image_alpha=.8}
     }
 }

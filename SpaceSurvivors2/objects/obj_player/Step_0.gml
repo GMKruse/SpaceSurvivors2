@@ -8,14 +8,14 @@ if(gp != -1){
     var xSpeed = move_hor * moveSpeed;
     var ySpeed = move_ver * moveSpeed;
 	
-	
+	/*
 	if (collision_circle(x + xSpeed, y, 1, obj_wall, false, true) ) {
         xSpeed = 0
     }
 
     if (collision_circle(x, y + ySpeed, 1, obj_wall, false, true)) {
         ySpeed = 0
-    }
+    }*/
 	
 
     // move the player
@@ -35,10 +35,27 @@ if (keyboard_check(ord("D"))) {
 }
 
 if (keyboard_check(ord("W"))) {
-    vspeed = clamp(vspeed - accel, -moveSpeed, moveSpeed);
+	
+	//IF TOUCHING SHOOT PAD, MOVE GUN UP
+	var inst_ = instance_place(x,y,obj_shootArea)
+	if(instance_exists(inst_)){with(inst_){parent.image_angle+=1 if(parent.image_angle>90){parent.image_angle=90}}}
+	
+	//ELSE: MOVE PLAYER
+    else
+	{
+		vspeed = clamp(vspeed - accel, -moveSpeed, moveSpeed);
+	}
 }
 if (keyboard_check(ord("S"))) {
-    vspeed = clamp(vspeed + accel, -moveSpeed, moveSpeed);
+	//IF TOUCHING SHOOT PAD, MOVE GUN DOWN
+	var inst_ = instance_place(x,y,obj_shootArea)
+	if(instance_exists(inst_)){with(inst_){parent.image_angle-=1 if(parent.image_angle<-90){parent.image_angle=-90}}}
+	
+	//ELSE: MOVE PLAYER
+    else
+	{
+		vspeed = clamp(vspeed + accel, -moveSpeed, moveSpeed);
+	}
 }
  
 if(speed>moveSpeed){speed=moveSpeed}
